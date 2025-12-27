@@ -40,7 +40,7 @@ export default function About() {
                         {social.isLucide ? (
                             <social.icon size={24} />
                         ) : (
-                            <img src={social.icon} alt={social.alt} className="w-6 h-6 object-contain invert opacity-60" />
+                            <img src={social.icon} alt={social.alt} className="w-6 h-6 object-contain invert" />
                         )}
                     </motion.a>
                 ))}
