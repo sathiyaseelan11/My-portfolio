@@ -1,12 +1,14 @@
 import { motion } from 'framer-motion';
 import { Github, Linkedin } from 'lucide-react';
+import codechefImg from '../assets/codechef.png';
+import leetcodeImg from '../assets/leetcode.png';
 
 export default function About() {
     const socials = [
         { icon: Github, href: "https://github.com/sathiyaseelan11/", isLucide: true },
         { icon: Linkedin, href: "https://www.linkedin.com/in/sathiyaseelan-s-9300b12a7", isLucide: true },
-        { icon: "/codechef.png", href: "https://www.codechef.com/users/sathiyaseelan5", isLucide: false, alt: 'CodeChef' },
-        { icon: "/leetcode.png", href: "https://leetcode.com/u/sathiya_seelan-77/", isLucide: false, alt: 'LeetCode' }
+        { icon: codechefImg, href: "https://www.codechef.com/users/sathiyaseelan5", isLucide: false, alt: 'CodeChef' },
+        { icon: leetcodeImg, href: "https://leetcode.com/u/sathiya_seelan-77/", isLucide: false, alt: 'LeetCode' }
     ];
 
     return (

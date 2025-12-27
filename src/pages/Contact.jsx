@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Send, Github, Linkedin, Mail, Phone, MapPin, Code2, Globe } from 'lucide-react';
+import codechefImg from '../assets/codechef.png';
+import leetcodeImg from '../assets/leetcode.png';
 
 export default function Contact() {
     const [result, setResult] = React.useState("");
@@ -55,12 +57,12 @@ export default function Contact() {
                         { Icon: Github, href: "https://github.com/sathiyaseelan11/" },
                         { Icon: Linkedin, href: "https://www.linkedin.com/in/sathiyaseelan-s-9300b12a7" },
                         {
-                            img: "/codechef.png",
+                            img: codechefImg,
                             href: "https://www.codechef.com/users/sathiyaseelan5",
                             alt: "CodeChef"
                         },
                         {
-                            img: "/leetcode.png",
+                            img: leetcodeImg,
                             href: "https://leetcode.com/u/sathiya_seelan-77/",
                             alt: "LeetCode"
                         }

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import profileImg from '../assets/profile_new.jpg';
 
 export default function Home() {
     const navigate = useNavigate();
@@ -16,7 +17,7 @@ export default function Home() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                 <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full border-2 border-white/10 overflow-hidden bg-white/5 backdrop-blur-sm flex items-center justify-center shadow-2xl">
                     <img
-                        src="/logo.png"
+                        src={profileImg}
                         alt="Sathiyaseelan"
                         className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
                     />
