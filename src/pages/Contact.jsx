@@ -73,7 +73,7 @@ export default function Contact() {
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.1, backgroundColor: 'rgba(255,255,255,0.1)' }}
-                            className="p-4 bg-white/5 border border-white/10 rounded-2xl text-white/60 transition-colors flex items-center justify-center"
+                            className="p-4 bg-white/5 border border-white/10 rounded-2xl text-white transition-colors flex items-center justify-center"
                         >
                             {item.Icon ? (
                                 <item.Icon size={24} />

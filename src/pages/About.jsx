@@ -35,7 +35,7 @@ export default function About() {
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.1, backgroundColor: 'rgba(255,255,255,0.1)' }}
                         whileTap={{ scale: 0.9 }}
-                        className="p-4 bg-white/5 border border-white/10 rounded-2xl text-white/60 transition-colors flex items-center justify-center shadow-lg"
+                        className="p-4 bg-white/5 border border-white/10 rounded-2xl text-white transition-colors flex items-center justify-center shadow-lg"
                     >
                         {social.isLucide ? (
                             <social.icon size={24} />
