@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './components/ui/Layout'
 import Loading from './components/ui/Loading'
 import CustomCursor from './components/ui/CustomCursor'
@@ -13,7 +13,7 @@ const Contact = lazy(() => import('./pages/Contact'))
 
 export default function App() {
   return (
-    <Router basename="/My-portfolio">
+    <Router>
       <CustomCursor />
       <Suspense fallback={<Loading />}>
         <Layout>
