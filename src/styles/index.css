@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --cyan: #22d3ee;
+  --purple: #a855f7;
+  --color-space: #05060a;
+}
+
+body {
+  background-color: #05060a;
+  color: white;
+  margin: 0;
+  overflow-x: hidden;
+  cursor: none;
+  /* Hide default cursor */
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
+
+.bg-space {
+  background: radial-gradient(circle at center, #0a0c16 0%, #05060a 100%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
