@@ -13,7 +13,7 @@ const Contact = lazy(() => import('./pages/Contact'))
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/My-portfolio">
       <CustomCursor />
       <Suspense fallback={<Loading />}>
         <Layout>
